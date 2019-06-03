@@ -1,0 +1,11 @@
+Scanner.dll
+extern "C" __declspec(dllimport)int _lex_enable(FILE* input, FILE* output, void (*callback_func)(const char*, int));
+extern"C" __declspec(dllimport)FILE* _lex_getInput();
+
+Grammar.dll
+extern "C" _declspec(dllimport) void* _Grammar_getInstance(string filePath);
+extern "C" _declspec(dllimport) vector<string>* _Grammar_getProductions(void* instance);
+extern "C" _declspec(dllimport) vector<string>* _Grammar_getProdItems(void* instance, int index);
+extern "C" _declspec(dllimport) vector<string>* _Grammar_getProdLeft(void* instance, int index);
+extern "C" _declspec(dllimport) unordered_set<string>* _Grammar_getFirst(void* instance,string expr);
+extern "C" _declspec(dllimport) unordered_set<string>* _Grammar_getFollow(void* instance,string expr);
