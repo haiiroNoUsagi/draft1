@@ -15,20 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LRParser_2.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="LRParser_3.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="output.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="LRParser_2.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="LRParser_3.cpp">
       <Filter>源文件</Filter>
     </ClCompile>

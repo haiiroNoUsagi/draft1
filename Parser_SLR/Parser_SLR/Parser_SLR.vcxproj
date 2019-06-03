@@ -119,13 +119,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="LRParser_2.h" />
     <ClInclude Include="LRParser_3.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LRParser_2.cpp" />
     <ClCompile Include="LRParser_3.cpp" />
-    <ClCompile Include="output.cpp" />
     <ClCompile Include="output2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
