@@ -419,13 +419,12 @@ bool LRParser_3<T>::init(
 	void* grammar, pf_pvectorSTR__pvoid function_getAllProd,
 	pf_pvectorSTR__pvoid_int _grammar_getProd,
 	pf_pusetSTR__pvoid_string _grammar_getFirst,
-	pf_pusetSTR__pvoid_string _grammar_getFollow
-) {
+	pf_pusetSTR__pvoid_string _grammar_getFollow) {
 	this->grammar = grammar;
 	// 首先需要得出文法的所有产生式
 	// 注意,这个动作将会率先检验参数是否合法
 	try {
-		_grammar_prodList = function_getAllProd(grammar);
+		_grammar_prodList = function_getAllProd(grammar)
 		if (_grammar_prodList->size() == 0)
 		{
 			return false;
